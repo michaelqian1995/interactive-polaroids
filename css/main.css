@@ -24,27 +24,42 @@ html {
 }
 
 .polaroid:nth-child(1) {
-  left: 21%;
+  left: 20%;
   top: 6em;
-  transform: rotate(-14deg);
+  transform: rotate(-16deg);
   z-index: 1;
 }
 
 .polaroid:nth-child(2) {
-  left: 31%;
+  left: 30%;
   top: 9em;
   transform: rotate(5deg);
   z-index: 3;
 }
 
 .polaroid:nth-child(3) {
-  left: 41%;
+  left: 40%;
   top: 6em;
   transform: rotate(30deg);
   z-index: 2;
 }
 
+.polaroid:hover {
+  transform: rotate(0deg);
+  z-index: 5;
+}
+
+.polaroid > img {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
 .polaroid > figcaption {
   color: #fff;
   text-shadow: 1px 1px 3px #000;
+  text-align: center;
+  position: absolute;
+  left: 5em;
+  bottom: 1em;
 }
